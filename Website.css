@@ -477,13 +477,54 @@ footer {
     padding-top: 5px;
   }
   
+  .button-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+  }
+  
+  .scroll-to-top {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 2px solid #000;
+    background-color: #fff;
+    border-radius: 5px;
+    color: #000;
+    font-size: 24px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .scroll-to-top:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .arrow {
+    display: block;
+    transform: rotate(-90deg);
+  }
 
   @media screen and (max-width: 700px){
     .text-box h1{
         font-size: 20px;
-
     }
 
+    .text-box p{
+      font-size: 14px;
+    }
+
+    .header1 img{
+      max-height: 120px;
+      max-width: 120px;
+    }
+
+    .nav-links  ul li a{
+      font-size: 12px;
+    }
 
     .box{
         width: 70%;
@@ -512,7 +553,7 @@ footer {
     }
       
     .footer-message p {
-        margin: 0;
+        margin: 0 10%;
         font-size: 14px;
         color: #888;
     }
@@ -534,27 +575,26 @@ footer {
     }
 
     #about-us{
-      width: 80%;
+      margin: auto;
+      width: 100%;
     }
 
     .p1:before{
         content: '[';
         color: #324B4E;
-        font-size: 400px;
         font-weight: 200;
         text-align: right;
-        padding-right: 10px;
         padding-bottom: 64px;
+        padding-left: 0px;
     }
     
     .p1:after{
         content: ']';
         color: #324B4E;
-        font-size: 400px;
         font-weight: 200;
         text-align: left;
-        padding-right: 10px;
         padding-bottom: 64px;
+        padding-right: 0px;
     }
 
     .timeline::after {
@@ -562,27 +602,41 @@ footer {
       }
     
     /* Full-width containers */
-      .container {
+    .container {
         width: 100%;
         padding-left: 70px;
         padding-right: 25px;
-      }
+    }
     
     /* Make sure that all arrows are pointing leftwards */
-      .container::before {
+    .container::before {
         left: 60px;
         border: medium solid #E6F4F1;
         border-width: 10px 10px 10px 0;
         border-color: transparent #E6F4F1 transparent transparent;
-      }
+    }
     
     /* Make sure all circles are at the same spot */
-      .left::after, .right::after {
+    .left::after, .right::after {
         left: 15px;
-      }
+    }
     
     /* Make all right containers behave like the left ones */
-      .right {
+    .right {
         left: 0%;
-      }
+    }
+
+    .scroll-to-top {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border: 2px solid #000;
+        background-color: #fff;
+        border-radius: 5px;
+        color: #000;
+        font-size: 24px;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
 }

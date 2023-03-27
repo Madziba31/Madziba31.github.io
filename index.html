@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="with=device-width, intitial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>MN Admissions Consulting</title>
     <link rel="stylesheet" href="Website.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,6 +19,7 @@
                 <li><a href="#header">HOME</a></li>
                 <li><a href="#about-us">ABOUT</a></li>
                 <li><a href="#our-services">SERVICES</a></li>
+                <li><a href="#founder">FOUNDER</a></li>
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
         </div>
@@ -32,6 +33,12 @@
     </p>
     <a href="#about-us" class="hero-btn">Visit us to learn more</a>
 </div>
+
+<div class="button-container">
+    <a href="#" class="scroll-to-top">
+      <span class="arrow">&#8593;</span>
+    </a>
+  </div>
 
 </section>
 
@@ -53,19 +60,19 @@
     <h1>Our Services</h1>
 
     <div class="row">
-        <div class="facilities-col">
+        <div class="facilities-col" id="our-services1">
             <img src="consultation.jpg">
         </div>
 
         <div class="facilities-col">
-            <img src="application-review.jpg">
+            <img src="application-review.jpg" id="our-services2">
         </div>
 
-        <div class="facilities-col">
+        <div class="facilities-col" id="our-services3">
             <img src="interview.jpg">
         </div>
 
-        <div class="facilities-col">
+        <div class="facilities-col" id="our-services4">
             <img src="mentoring.jpg">
         </div>
     </div>
@@ -81,7 +88,7 @@
         <div id="popup1" class="overlay">
             <div class="popup">
                 <h2>Free Initial Consultation</h2>
-                <a class="close" href="#our-services">&times;</a>
+                <a class="close" href="#our-services1">&times;</a>
                 <p> 
                 The initial consultation is an opportunity for our mentors to meet the students and assess the
                 students specific needs. The initial consultation is also an opportunity for students to briefly meet the
@@ -99,7 +106,7 @@
         <div id="popup2" class="overlay">
             <div class="popup">
                 <h2>Application Review</h2>
-                <a class="close" href="#our-services">&times;</a>
+                <a class="close" href="#our-services2">&times;</a>
                 <p> 
                 This process will provide a comprehensive review of your autobiographical sketch (ABS), CV
                 and essays. Experienced medical students will read your ABS and essays, and give you detailed feedback
@@ -117,7 +124,7 @@
         <div id="popup3" class="overlay">
             <div class="popup">
                 <h2>Interview Prep</h2>
-                <a class="close" href="#our-services">&times;</a>
+                <a class="close" href="#our-services3">&times;</a>
                 <p> 
                 Congratulations you have made it this far in the application process. The interview is the only
                 obstacle between you and medical school. There are many brilliant applicants that do not make it past this
@@ -135,7 +142,7 @@
         <div id="popup4" class="overlay">
             <div class="popup">
                 <h2>Pre-Med Mentoring</h2>
-                <a class="close" href="#our-services">&times;</a>
+                <a class="close" href="#our-services4">&times;</a>
                 <p> 
                     Through extensive research and past experiences, MN Admissions Consulting has identified an
                     unmet student need. Many pre-medical students seek admission consulting immediately prior to
@@ -156,7 +163,7 @@
 </section>
 
 <!---- Founder ---->
-<section class="founder">
+<section class="founder" id="founder">
     <h1>Founder</h1>
     <p>Mansur Naeem, PhD, MD (Class of 2024)</p>
     <div class="timeline">
