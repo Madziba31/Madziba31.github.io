@@ -122,7 +122,7 @@ nav .fa-solid{
 
 /*---- about us ----*/
 #about-us{
-    width: 80%;
+    width: 50%;
     margin: auto;
     text-align: center;
     padding-top: 100px;
@@ -137,17 +137,21 @@ nav .fa-solid{
 .p1:before{
     content: '[';
     color: #324B4E;
-    font-size: 80px;
+    font-size: 140px;
     text-align: right;
     padding-right: 10px;
+    padding-bottom: 20px;
+    font-weight: 400;
 }
 
 .p1:after{
     content: ']';
     color: #324B4E;
-    font-size: 80px;
+    font-size: 140px;
     text-align: left;
     padding-right: 10px;
+    padding-bottom: 20px;
+    font-weight: 400;
 }
 
 h1{
@@ -278,11 +282,24 @@ h3{
     overflow: auto;
   }
 
+.facilities-col{
+    overflow: hidden;
+}
 
 .facilities-col img{
     position: relative;
     width: 100%;
-    overflow: hidden;
+}
+
+.services-col{
+  margin-bottom: 20px;
+  flex-basis: 20.5%;
+  background: #E6F4F1;
+  border-radius: 10px;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  overflow: hidden;
 }
 
 .photos{
@@ -299,35 +316,40 @@ h3{
 }
 
 footer {
-    background-color: #F8F8F8;
-    padding: 30px 500px;
     display: flex;
+    flex-basis: 20%;
+    background-color: #F8F8F8;
+    width: 100%;
+    padding: 2% 20%;
     justify-content: space-between;
     align-items: center;
-  }
+}
   
-  .footer-logo img {
+.footer-logo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     max-height: 150px;
-  }
+}
   
-  .footer-message p {
+.footer-message p {
     margin: 0;
     font-size: 14px;
     color: #888;
-  }
+}
   
-  .footer-message a {
+.footer-message a {
     color: #888;
     text-decoration: none;
-  }
+}
 
-  .founder{
+.founder{
     width: 100%;
     margin: auto;
     text-align: center;
     padding-top: 100px;
     padding-bottom: 0px;
-  }
+}
 
 .founder-col{
     flex-basis: 70%;
@@ -459,28 +481,9 @@ footer {
   @media screen and (max-width: 700px){
     .text-box h1{
         font-size: 20px;
+
     }
-    .nav-links ul li{
-        display: block;
-    }
-    .nav-links{
-        position: absolute;
-        background: #E6F4F1;
-        height: 90vh;
-        width: 200px;
-        top: 0;
-        right: -200px;
-        text-align: left;
-        z-index: 2;
-        transition: 1s;
-    }
-    nav .fa-solid{
-        display: block;
-        color: #324B4E;
-        margin: 10px;
-        font-size: 22px;
-        cursor: pointer;
-    }
+
 
     .box{
         width: 70%;
@@ -530,24 +533,28 @@ footer {
         overflow: hidden;
     }
 
+    #about-us{
+      width: 80%;
+    }
+
     .p1:before{
         content: '[';
         color: #324B4E;
-        font-size: 300px;
+        font-size: 400px;
         font-weight: 200;
         text-align: right;
         padding-right: 10px;
-        padding-bottom: 50px;
+        padding-bottom: 64px;
     }
     
     .p1:after{
         content: ']';
         color: #324B4E;
-        font-size: 300px;
+        font-size: 400px;
         font-weight: 200;
         text-align: left;
         padding-right: 10px;
-        padding-bottom: 50px;
+        padding-bottom: 64px;
     }
 
     .timeline::after {
